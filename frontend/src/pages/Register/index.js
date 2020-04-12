@@ -59,6 +59,7 @@ export default function Register() {
                         placeholder="Nome da ONG"
                         value={name}
                         onChange={e => setName(e.target.value)}
+                        required
                     />
 
                     <input
@@ -66,12 +67,14 @@ export default function Register() {
                         placeholder="E-mail"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
+                        required
                     />
 
                     <input
                         placeholder="WhatApp"
                         value={whatapp}
                         onChange={e => setWhatapp(e.target.value)}
+                        required
                     />
 
                     <div className="input-group">
@@ -80,6 +83,7 @@ export default function Register() {
                             placeholder="Cidade"
                             value={city}
                             onChange={e => setCity(e.target.value)}
+                            required
                         />
 
                         <input
@@ -88,6 +92,7 @@ export default function Register() {
                             style={{ width: 80 }}
                             value={uf}
                             onChange={e => setUf(e.target.value)}
+                            required
                         />
                     </div>
 
